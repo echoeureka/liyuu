@@ -1,8 +1,8 @@
-import { Config } from './types/index'
-import xhr from './xhr'
+import { Config } from './types/index';
+import xhr from './xhr';
 
-function axios(config: Config) {
-  xhr(config)
+function axios(config: Config): void {
+  xhr(config);
 }
 
-export default axios
+export default axios;

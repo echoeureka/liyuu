@@ -1,11 +1,11 @@
-import { Config } from './types/index'
+import { Config } from './types/index';
 
-const xhr = (config: Config) => {
-  const { url, method = 'GET', params, data = {} } = config
+const xhr: (config: Config) => void = (config: Config): void => {
+  const { url, method = 'GET', params, data = {} } = config;
 
-  const request = new XMLHttpRequest()
-  request.open(method.toUpperCase(), url, true)
-  request.send(data)
-}
+  const request: XMLHttpRequest = new XMLHttpRequest();
+  request.open(method.toUpperCase(), url, true);
+  request.send(data);
+};
 
-export default xhr
+export default xhr;
